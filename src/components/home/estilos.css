@@ -1,0 +1,34 @@
+.position{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.slider{
+    background-image: url("../imagenes/mision.jpg");
+    background-size: cover;
+    height: 60%;
+    width: 50%;
+    border-radius: 15px;
+    animation: animate 25s infinite;
+}
+
+@keyframes animate {
+    25%{
+        background-image: url("../imagenes/gerencia.jpg");
+        background-size: cover;
+    }
+    50%{
+        background-image: url("../imagenes/sistemas.jpg");
+        background-size: cover;
+    }
+    75%{
+        background-image: url("../imagenes/comerciales.jpg");
+        background-size: cover;
+    }
+    100%{
+        background-image: url("../imagenes/team.jpg");
+        background-size: cover;
+    }
+}
